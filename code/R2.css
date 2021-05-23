@@ -1,0 +1,79 @@
+body{
+   
+}
+.main{
+    padding: 10px;
+}
+table{
+   
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+}
+th{
+    color: darkorange;
+}
+.tableContainer thead tr th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 18px;
+    background-color: blanchedalmond;
+  
+}
+.tableContainer tbody tr td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 18px;
+    
+}
+.tableTd{
+    background-color: burlywood;
+}
+.tableTd1{
+    background-color: cyan;
+}
+.tableTd2{
+    background-color: darkgrey;
+}
+@media (max-width: 480px){
+    .tableContainer{
+        width: 100%;
+    }
+    .tableContainer thead{
+        display: none;
+    }
+
+    .tableContainer tr{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px){
+    .tableContainer{
+        width: 100%;
+    }
+    .tableContainer thead{
+        display: none;
+    }
+
+    .tableContainer tr{
+        margin-bottom: 30px;
+        display: block;
+        flex-direction: column;
+    }
+     .tableContainer td{
+        display: block;
+         text-align: right;
+     }
+     .tableContainer td:last-child{
+         border-bottom: 0;
+     }
+
+     .tableContainer td:before{
+         content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+    }
+
+}
